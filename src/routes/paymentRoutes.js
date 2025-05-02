@@ -6,6 +6,6 @@ const router = express.Router();
 router.post('/create', paymentController.createPayment);
 
 // Route to update payment status
-router.put('/status/:paymentId', paymentController.updatePaymentStatus);
+router.patch('/:id', paymentController.updatePaymentStatus);
 
 module.exports = router;

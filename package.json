@@ -4,11 +4,16 @@
   "description": "Payment service for Qtasty",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^4.17.1",
-    "stripe": "^8.0.0",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "stripe": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

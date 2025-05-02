@@ -2,12 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const paymentRoutes = require('./routes/paymentRoutes');
 require('dotenv').config();
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(express.json()); // To parse JSON bodies
-
+app.use(cors())
 // Use payment routes
 app.use('/api/payments', paymentRoutes);
 
